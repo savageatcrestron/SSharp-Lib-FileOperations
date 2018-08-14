@@ -1,0 +1,8 @@
+C:\Users\dsavage\Documents\Visual Studio 2008\Projects\FileOperations\FileOperations\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dsavage\Documents\Visual Studio 2008\Projects\FileOperations\FileOperations\bin\Debug\FileOperations.dll
+C:\Users\dsavage\Documents\Visual Studio 2008\Projects\FileOperations\FileOperations\bin\Debug\FileOperations.pdb
+C:\Users\dsavage\Documents\Visual Studio 2008\Projects\FileOperations\FileOperations\bin\Debug\SimplSharpCustomAttributesInterface.dll
+C:\Users\dsavage\Documents\Visual Studio 2008\Projects\FileOperations\FileOperations\bin\Debug\SimplSharpHelperInterface.dll
+C:\Users\dsavage\Documents\Visual Studio 2008\Projects\FileOperations\FileOperations\obj\Debug\FileOperations.dll
+C:\Users\dsavage\Documents\Visual Studio 2008\Projects\FileOperations\FileOperations\obj\Debug\FileOperations.pdb
+C:\Users\dsavage\Documents\Visual Studio 2008\Projects\FileOperations\FileOperations\bin\Debug\Newtonsoft.Json.Compact.dll

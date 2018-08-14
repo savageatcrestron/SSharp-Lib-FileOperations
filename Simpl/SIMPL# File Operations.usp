@@ -1,0 +1,26 @@
+#CATEGORY "9" // Memory
+
+#SYMBOL_NAME "SIMPL# File Operations"
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+
+
+#user_simplsharp_library "FileOperations"
+    
+digital_input executeFileOp;
+                      
+string_input folderLocation[50], fileName[100];
+                                                      
+string_output result;
+    
+FileOps myFileOps;
+
+push executeFileOp
+{
+	//result = myFileOps.readAFile(folderLocation, fileName);
+	//result = myFileOps.hiJason(folderLocation, fileName);
+	result = myFileOps.hiXML(folderLocation, fileName);
+
+
+}
