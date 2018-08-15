@@ -19,8 +19,8 @@ FileOps myFileOps;
 push executeFileOp
 {
 	//result = myFileOps.readAFile(folderLocation, fileName);
-	//result = myFileOps.hiJason(folderLocation, fileName);
-	result = myFileOps.hiXML(folderLocation, fileName);
+	result = myFileOps.hiJason(folderLocation, fileName);
+	//result = myFileOps.hiXML(folderLocation, fileName);
 
 
 }

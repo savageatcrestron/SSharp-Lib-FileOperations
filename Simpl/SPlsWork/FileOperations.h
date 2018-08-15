@@ -1,8 +1,7 @@
 namespace FileOperations;
         // class declarations
          class FileOps;
-         class item;
-         class cars;
+         class Car;
          class RootObject;
      class FileOps 
     {
@@ -13,7 +12,6 @@ namespace FileOperations;
         // class functions
         STRING_FUNCTION readAFile ( STRING folderLocation , STRING FileName );
         STRING_FUNCTION hiJason ( STRING sourceLocation , STRING sourceName );
-        STRING_FUNCTION hiXML ( STRING sourceLocation , STRING sourceName );
         STRING_FUNCTION ToString ();
         SIGNED_LONG_INTEGER_FUNCTION GetHashCode ();
 
@@ -23,7 +21,7 @@ namespace FileOperations;
         // class properties
     };
 
-     class item 
+     class Car 
     {
         // class delegates
 
@@ -42,22 +40,6 @@ namespace FileOperations;
         STRING model[];
     };
 
-     class cars 
-    {
-        // class delegates
-
-        // class events
-
-        // class functions
-        STRING_FUNCTION ToString ();
-        SIGNED_LONG_INTEGER_FUNCTION GetHashCode ();
-
-        // class variables
-        INTEGER __class_id__;
-
-        // class properties
-    };
-
      class RootObject 
     {
         // class delegates
@@ -72,6 +54,5 @@ namespace FileOperations;
         INTEGER __class_id__;
 
         // class properties
-        cars theseCars;
     };
 

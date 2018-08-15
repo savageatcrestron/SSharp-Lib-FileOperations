@@ -133,21 +133,17 @@ namespace FileOperations
 
 
 
-        public class item
+
+        public class Car
         {
             public string brand { get; set; }
             public string year { get; set; }
             public string model { get; set; }
         }
 
-        public class cars
-        {
-            public List<item> theseItems { get; set; }
-        }
-
         public class RootObject
         {
-            public cars theseCars { get; set; }
+            public List<Car> cars { get; set; }
         }
 
         public string hiJason(string sourceLocation, string sourceName)
@@ -165,12 +161,12 @@ namespace FileOperations
 
                 RootObject result = JsonConvert.DeserializeObject<RootObject>(fileContents);
 
-                CrestronConsole.PrintLine("example item is = {0}", result.theseCars.theseItems.ToString());
+                CrestronConsole.PrintLine("Deserialization completed");
 
                 // print what you found after Deserialization
-                foreach (var thing in result.theseCars.theseItems)
+                foreach (var thing in result.cars)
                 {
-                    CrestronConsole.PrintLine("result = {0}, {1}, {2}", thing.brand, thing.model, thing.year);
+                    CrestronConsole.PrintLine("result = {0}", thing.brand);
                 }
 
             }
@@ -187,7 +183,7 @@ namespace FileOperations
         // XML serialization region
         #region
 
-
+        /*
         public string hiXML(string sourceLocation, string sourceName)
         {
             //string fileContents = "";
@@ -203,7 +199,7 @@ namespace FileOperations
 
                 #region // Basic Method
 
-                /*
+                
                 while (myReader.Read())
                 {
                     switch (myReader.NodeType)
@@ -255,7 +251,7 @@ namespace FileOperations
 
                 #region // XML Deserialization
                 // not working due to <item xmlns="> was not expected.
-
+                /*
                 XDocument doc = XDocument.Parse(fileContents);
                 XElement foodItems = doc.Element("food");
                 IEnumerable<XElement> foodItemsElements = foodItems.Elements();
@@ -274,8 +270,9 @@ namespace FileOperations
                         //Case for each element you could get.
                     }
                 }
+               
             }
-
+                
                 #endregion
 
 
@@ -286,8 +283,10 @@ namespace FileOperations
                 throw;
             }
             return "done.";
-
-        #endregion
+        
+        
         }
+                 * */
+        #endregion
     }
 }
